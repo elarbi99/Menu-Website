@@ -1,0 +1,16 @@
+ErrorDocument 404  https://cislinux.hfcc.edu /~maelarbi/Cis122HW2/404.php
+
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.php$ https://cislinux.hfcc.edu/~maelarbi/Cis122HW2/404.php [L]
+
+
+
+
+
+
+
